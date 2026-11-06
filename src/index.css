@@ -1,0 +1,171 @@
+
+@import "tailwindcss";
+
+@theme {
+  --color-background: #101010;
+  --color-surface: #242424;
+  --color-accent: #A3A3A3;
+  --color-primary: #FAFAFA;
+}
+
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  color: #FAFAFA;
+  background-color: #101010;
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+button, a {
+  transition: color 200ms ease, background-color 200ms ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  button, a {
+    transition: none;
+  }
+}
+
+/* Hero animations */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-animate {
+  animation: fadeInUp 700ms ease-out both;
+}
+
+.hero-animate-delay {
+  animation: fadeInUp 900ms ease-out 150ms both;
+}
+
+/* Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-animate,
+  .hero-animate-delay {
+    animation: none;
+  }
+}
+
+/* About & Skills */
+
+@keyframes softReveal {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.skills-reveal {
+  animation: softReveal 650ms ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skills-reveal {
+    animation: none;
+  }
+}
+
+/* Global UI refinements */
+
+html {
+  scroll-padding-top: 24px;
+}
+
+body {
+  overflow-x: clip;
+}
+
+::selection {
+  background-color: #A3A3A3;
+  color: #101010;
+}
+
+:focus-visible {
+  outline: 2px solid #FAFAFA;
+  outline-offset: 3px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+/* Reusable subtle entrance animation */
+
+@keyframes revealUp {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.page-reveal {
+  animation: revealUp 600ms ease-out both;
+}
+
+/* Respect user accessibility preferences */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
