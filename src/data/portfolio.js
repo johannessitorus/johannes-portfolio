@@ -204,6 +204,86 @@ export const portfolio = {
       visibility: "public",
       demo: "",
     },
+
+{
+  slug: "agaminong-mobile-testing",
+  title: "Agaminong — Mobile Automation Testing",
+  description:
+    "Android mobile application automated functional testing using Appium and WebdriverIO. Implemented Page Object Model (POM) with test scenarios covering registration, login, logout, table reservations, live music, ordering, order history, profile management, menu browsing, and reviews.",
+  category: "Software Quality Assurance",
+  technologies: [
+    "Appium",
+    "WebdriverIO",
+    "JavaScript",
+    "Mocha",
+    "UiAutomator2",
+    "Page Object Model",
+  ],
+  images: [
+    {
+      src: "/images/projects/agaminong-testing/login.jpg",
+      alt: "Appium automated login test execution",
+      label: "Login Testing",
+    },
+    {
+      src: "/images/projects/agaminong-testing/register.jpg",
+      alt: "Appium automated registration test execution",
+      label: "Registration Testing",
+    },
+    {
+      src: "/images/projects/agaminong-testing/logout.jpg",
+      alt: "Appium automated logout test execution",
+      label: "Logout Testing",
+    },
+    {
+      src: "/images/projects/agaminong-testing/reservasi_meja.png",
+      alt: "Automated table reservation test execution",
+      label: "Table Reservation",
+    },
+    {
+      src: "/images/projects/agaminong-testing/livemusic.jpg",
+      alt: "Automated live music feature test execution",
+      label: "Live Music",
+    },
+    {
+      src: "/images/projects/agaminong-testing/membuatpesanan.jpg",
+      alt: "Automated food ordering test execution",
+      label: "Food Ordering",
+    },
+    {
+      src: "/images/projects/agaminong-testing/melihatriwayatpesanan.png",
+      alt: "Automated order history test execution",
+      label: "Order History",
+    },
+    {
+      src: "/images/projects/agaminong-testing/editprofil.jpg",
+      alt: "Automated profile update test execution",
+      label: "Edit Profile",
+    },
+    {
+      src: "/images/projects/agaminong-testing/viewprofil.jpg",
+      alt: "Automated view profile test execution",
+      label: "View Profile",
+    },
+    {
+      src: "/images/projects/agaminong-testing/lihatmenu.jpg",
+      alt: "Automated menu browsing test execution",
+      label: "Menu Browsing",
+    },
+    {
+      src: "/images/projects/agaminong-testing/ulasan.jpg",
+      alt: "Automated review feature test execution",
+      label: "Review Testing",
+    },
+  ],
+  github:
+    "https://github.com/johannessitorus/agaminong-appium-automation-tests",
+  repositoryUrl:
+    "https://github.com/johannessitorus/agaminong-appium-automation-tests",
+  visibility: "public",
+  demo: "",
+},
+
   ],
 
   // ===========================
